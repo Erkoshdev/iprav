@@ -73,8 +73,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//настройка отсутпа main блока
+//настройка отсутпа main блока и добавление скролл отступа
 document.addEventListener("DOMContentLoaded", function () {
     const height = document.querySelector('header').offsetHeight;
     document.querySelector('.main').style.paddingTop = height + 'px';
+
+    document.querySelectorAll('section').forEach(section => {
+        section.style.scrollMarginTop = height + 'px';
+    })
 })
