@@ -71,6 +71,21 @@
     letter-spacing: -0.36px;
   }
 
+
+  //news-detail
+  .news-detail-content {
+    display: block;
+  }
+  .news-detail-right {
+    margin-top: 64px;
+    width: 100%;
+  }
+  .other-news-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
 }
 
 //tablets
@@ -722,6 +737,17 @@
     line-height: 33.6px;
     letter-spacing: 0;
     text-align: center;
+  }
+
+
+  //news-detail
+  .news-detail h1 {
+    font-size: 24px;
+    line-height: 33.6px;
+    letter-spacing: 0;
+  }
+  .other-news-list {
+    grid-template-columns: 1fr;
   }
 }
 

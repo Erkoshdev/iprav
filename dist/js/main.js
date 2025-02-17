@@ -92,3 +92,34 @@ document.addEventListener("DOMContentLoaded", function () {
         section.style.scrollMarginTop = height + 'px';
     })
 })
+
+
+//news page slider
+let news = new Swiper(".news-page-list", {
+    speed: 400,
+    spaceBetween: 32,
+    slidesPerView: 1,
+    grid: {
+        rows: 3,
+        fill: 'row'
+    },
+
+    navigation: {
+        nextEl: '.news-page-next',
+        prevEl: '.news-page-prev',
+    },
+
+    pagination: {
+        el: '.news-page-pagination',
+        type: 'bullets',
+    },
+
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1200: {
+            slidesPerView: 3,
+        }
+    }
+});
