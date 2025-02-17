@@ -5,7 +5,7 @@
 //header
 .header {
   background: #0E46A4;
-  border-bottom: 1px solid #F2F0F7;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
   position: fixed;
   top: 0;
   left: 0;
@@ -245,6 +245,9 @@
     display: block;
     margin-top: -120px;
   }
+  img.hero-image-sm {
+    display: none;
+  }
 }
 .hero-phone-text {
   position: absolute;
@@ -263,10 +266,10 @@
     background: #FFDB34;
     box-shadow: none;
   }
-  &:nth-child(even) {
+  &:nth-child(odd) {
     border-radius: 20px 20px 0 20px;
   }
-  &:nth-child(odd) {
+  &:nth-child(even) {
     border-radius: 20px 20px 20px 0;
   }
   &:nth-of-type(1) {
@@ -960,6 +963,7 @@
   background: #FFDB34;
   width: fit-content;
   border-radius: 8px;
+  text-transform: uppercase;
 }
 
 

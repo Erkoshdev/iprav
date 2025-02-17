@@ -18,6 +18,10 @@ document.querySelector('.show-mobile-menu').onclick = showMobileMenu;
 document.querySelector('.close-mobile-menu').onclick = hideMobileMenu;
 document.querySelector('.header-overlay').onclick = hideMobileMenu;
 
+document.querySelectorAll('.header-nav-link').forEach(link => {
+    link.addEventListener('click', hideMobileMenu);
+});
+
 
 //переключение языка на мобилке
 const languageToggleBtnList = document.querySelectorAll('.lang-toggle-link');
@@ -36,7 +40,7 @@ languageToggleBtnList.forEach(btn => {
 let swiper = new Swiper(".news-list", {
     speed: 400,
     spaceBetween: 32,
-    slidesPerView: 'auto',
+    slidesPerView: 1,
 
     navigation: {
         nextEl: '.news-next',
@@ -47,6 +51,12 @@ let swiper = new Swiper(".news-list", {
         el: '.news-pagination',
         type: 'bullets',
     },
+
+    breakpoints: {
+        768: {
+            slidesPerView: 'auto',
+        }
+    }
 });
 
 
