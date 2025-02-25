@@ -123,3 +123,26 @@ let news = new Swiper(".news-page-list", {
         }
     }
 });
+
+
+//toastify (https://github.com/apvarun/toastify-js)
+function showToast(message, type = "success") {
+    const toastConfig = {
+        text: message,
+        avatar: type === "error" ? "icon/i.svg" : "icon/checkmark.svg",
+        duration: 3000,
+        close: true,
+        gravity: "top",
+        position: "center",
+        style: {
+            background: type === "error" ? "#F44E44" : "#29B593",
+            borderRadius: "10px",
+        },
+        onClick: function () {} // Callback after click
+    };
+
+    Toastify(toastConfig).showToast();
+}
+// Использование
+showToast("Произошла ошибка при отправке сообщения. Попробуйте еще раз.", "error");
+showToast("Сообщение успешно отправлено.", "success");

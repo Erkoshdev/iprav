@@ -57,6 +57,7 @@ function libsJs() {
   return src([
       'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
       'node_modules/swiper/swiper-bundle.min.js',
+      'node_modules/toastify-js/src/toastify.js'
   ])
       .pipe(concat('libs.min.js'))
       .pipe(dest('app/js'))
@@ -66,6 +67,7 @@ function libsCss() {
   return src([
       'node_modules/bootstrap/dist/css/bootstrap.min.css',
       'node_modules/swiper/swiper-bundle.min.css',
+      'node_modules/toastify-js/src/toastify.css'
   ])
       .pipe(concat('libs.min.css'))
       .pipe(dest('app/css'))
