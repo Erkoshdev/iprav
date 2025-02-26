@@ -532,7 +532,7 @@
     }
     img.hero-image-sm {
       display: block;
-      margin-top: -25px;
+      margin-top: -45px;
     }
   }
   .hero-content-title {
@@ -548,17 +548,17 @@
   .hero-phone-text {
     padding: 2px 5px;
     font-size: 10px;
-    line-height: 120%
+    line-height: 120%;
   }
   .hero-phone-text {
     &:nth-child(odd) {
-      border-radius: 5px 5px 0 5px;
+      border-radius: 7px 7px 0 7px;
     }
     &:nth-child(even) {
-      border-radius: 5px 5px 5px 0;
+      border-radius: 7px 7px 7px 0;
     }
     &:nth-of-type(1) {
-      top: 12%;
+      top: 10%;
     }
     &:nth-of-type(2) {
       top: 23%;
@@ -567,19 +567,19 @@
       top: 30%;
     }
     &:nth-of-type(4) {
-      top: 36%;
+      top: 42%;
     }
     &:nth-of-type(5) {
-      top: 47%;
-    }
-    &:nth-of-type(6) {
-      top: 47%;
-    }
-    &:nth-of-type(7) {
       top: 57%;
     }
+    &:nth-of-type(6) {
+      top: 58%;
+    }
+    &:nth-of-type(7) {
+      top: 72%;
+    }
     &:nth-of-type(8) {
-      top: 60%;
+      top: 75%;
     }
   }
 
