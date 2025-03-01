@@ -772,6 +772,13 @@
   line-height: 24px;
   letter-spacing: -0.32px;
   color: #0E46A4;
+  transition: 0.2s ease;
+  @media(hover: hover) {
+    &:hover {
+      background: #0E46A4;
+      color: #fff;
+    }
+  }
 }
 .news-list {
   margin-top: 60px;
